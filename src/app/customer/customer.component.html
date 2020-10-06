@@ -1,0 +1,50 @@
+<div class="col-md-12 col-12 col-sm-12 border pt-4" [formGroup]="addUser">
+  <div class="col-md-12 col-12 font-weight-bold text-capitalize text-info m-4">User Registration</div>
+  <div class="row">
+
+
+    <div class="col-md-4 form-group">
+      <label for="">Name</label>
+      <input type="text" formControlName="name" class="form-control">
+    </div>
+    <div class="col-md-12 text-capitalize text-center bg-info">Address</div>
+
+    <div class="col-md-12 pt-4 pb-3"> <button class="btn btn-warning" (click)="addAddress()">Add</button> </div>
+
+    <div class="col-md-12" formArrayName="uaddress">
+      <div class="row" *ngFor="let  i of userAddress.controls;let pointIndex=index " [formGroupName]="pointIndex">
+        <div class="col-md-4">
+
+          <label for="">address</label>
+          <input type="text" formControlName="address" class="form-control">
+        </div>
+        <div class="col-md-4">
+
+          <label for="">city</label>
+          <input type="text" formControlName="city" class="form-control">
+        </div>
+        <div class="col-md-4">
+
+          <label for="">pincode</label>
+          <input type="text" formControlName="pincode" class="form-control">
+        </div>
+        <div class="col-md-4">
+
+          <label for="">state</label>
+          <input type="text" formControlName="state" class="form-control">
+        </div>
+
+        <div class="col-md-4">
+
+          <label for="">Contry</label>
+          <input type="text" formControlName="country" class="form-control">
+        </div>
+        <div class="col-md-4 pt-4 pb-3"> <button class="btn btn-danger"
+            (click)="deleteAddress(pointIndex)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-12 col-sm-12 text-right"> <button class="btn btn-success"
+        (click)="submit()">Submit</button></div>
+  </div>
+</div>

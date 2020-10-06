@@ -1,0 +1,11 @@
+<div [formGroup]="form">
+  <div formArrayName="persons">
+    <div *ngFor="let r of person.controls;let pIndex=index">
+      <label>Name</label>
+      <input type="text" formControlName="name">
+    </div>
+  </div>
+</div>
+
+<button (click)="add()">Add</button>
+<button (click)="submit()">submit</button>

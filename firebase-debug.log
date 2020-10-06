@@ -1,0 +1,150 @@
+[debug] [2020-10-06T10:00:51.711Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:00:51.717Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-06T10:00:51.718Z] CLI Version:   8.12.0
+[debug] [2020-10-06T10:00:51.718Z] Platform:      win32
+[debug] [2020-10-06T10:00:51.719Z] Node Version:  v14.4.0
+[debug] [2020-10-06T10:00:51.721Z] Time:          Tue Oct 06 2020 15:30:51 GMT+0530 (India Standard Time)
+[debug] [2020-10-06T10:00:51.721Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:00:51.722Z] 
+[debug] [2020-10-06T10:00:51.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-06T10:00:51.742Z] > authorizing via signed-in user
+[debug] [2020-10-06T10:00:51.743Z] [iam] checking project mat-design-2b5d9 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-10-06T10:00:51.751Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mat-design-2b5d9:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-10-06T10:00:53.344Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 10:00:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1140","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-06T10:00:53.347Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mat-design-2b5d9  
+ 
+[debug] [2020-10-06T10:01:14.422Z] Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-10-06T10:01:14.426Z] FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.138:443
+    at Request._callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.onRequestError (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:485:12)
+    at TLSSocket.socketErrorListener (_http_client.js:467:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:485:12)
+    at emitErrorNT (internal/streams/destroy.js:100:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:68:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project mat-design-2b5d9. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-10-06T10:04:14.652Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:04:14.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-06T10:04:14.656Z] CLI Version:   8.12.0
+[debug] [2020-10-06T10:04:14.656Z] Platform:      win32
+[debug] [2020-10-06T10:04:14.656Z] Node Version:  v14.4.0
+[debug] [2020-10-06T10:04:14.658Z] Time:          Tue Oct 06 2020 15:34:14 GMT+0530 (India Standard Time)
+[debug] [2020-10-06T10:04:14.658Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:04:14.658Z] 
+[debug] [2020-10-06T10:04:14.667Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-06T10:04:14.668Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Angular Projects\customer-firebase-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using angularcrud-a4d14. 
+[debug] [2020-10-06T10:04:32.646Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angularcrud-a4d14  
+ 
+[debug] [2020-10-06T10:04:53.745Z] Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-10-06T10:04:53.747Z] FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.138:443
+    at Request._callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.onRequestError (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:485:12)
+    at TLSSocket.socketErrorListener (_http_client.js:467:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:485:12)
+    at emitErrorNT (internal/streams/destroy.js:100:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:68:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project angularcrud-a4d14. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-10-06T10:05:06.025Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:05:06.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2020-10-06T10:05:06.028Z] CLI Version:   8.12.0
+[debug] [2020-10-06T10:05:06.028Z] Platform:      win32
+[debug] [2020-10-06T10:05:06.028Z] Node Version:  v14.4.0
+[debug] [2020-10-06T10:05:06.030Z] Time:          Tue Oct 06 2020 15:35:06 GMT+0530 (India Standard Time)
+[debug] [2020-10-06T10:05:06.030Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:05:06.030Z] 
+[debug] [2020-10-06T10:05:06.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-06T10:05:06.040Z] > authorizing via signed-in user
+[debug] [2020-10-06T10:05:06.047Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=1000  
+ 
+[debug] [2020-10-06T10:05:27.091Z] Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-10-06T10:05:27.094Z] FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.138:443
+    at Request._callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.onRequestError (C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:485:12)
+    at TLSSocket.socketErrorListener (_http_client.js:467:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:485:12)
+    at emitErrorNT (internal/streams/destroy.js:100:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:68:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-10-06T10:05:35.340Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:05:35.343Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SPCP285\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-06T10:05:35.344Z] CLI Version:   8.12.0
+[debug] [2020-10-06T10:05:35.344Z] Platform:      win32
+[debug] [2020-10-06T10:05:35.344Z] Node Version:  v14.4.0
+[debug] [2020-10-06T10:05:35.346Z] Time:          Tue Oct 06 2020 15:35:35 GMT+0530 (India Standard Time)
+[debug] [2020-10-06T10:05:35.346Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T10:05:35.346Z] 
+[debug] [2020-10-06T10:05:35.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-06T10:05:35.362Z] > authorizing via signed-in user
+[debug] [2020-10-06T10:05:35.362Z] [iam] checking project mat-design-2b5d9 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-10-06T10:05:35.367Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mat-design-2b5d9:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-10-06T10:05:36.927Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 10:05:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1186","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-06T10:05:36.930Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mat-design-2b5d9  
+ 
+[debug] [2020-10-06T10:05:37.563Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 10:05:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mat-design-2b5d9'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-10-06T10:05:37.602Z] >>> HTTP REQUEST PUT https://mat-design-2b5d9.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2020-10-06T10:05:39.162Z] <<< HTTP RESPONSE 404 {"server":"nginx","date":"Tue, 06 Oct 2020 10:05:39 GMT","content-type":"application/json; charset=utf-8","content-length":"101","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-10-06T10:05:39.162Z] <<< HTTP RESPONSE BODY {
+  "error" : "Firebase error. Please ensure that you spelled the name of your Firebase correctly"
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.
